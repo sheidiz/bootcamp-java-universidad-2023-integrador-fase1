@@ -87,20 +87,22 @@
                 <a href="tel:11 7102 6887" class="text-white text-decoration-none">Tel 11 7102 6887</a>
                 <a href="mailto:info@proyectogc.org" class="text-white text-decoration-none">info@proyectogc.org</a>
             </address>
-
+			
             <form class="needs-validation d-flex flex-column g-3" action="" novalidate>
                 <div class="form-floating text-dark mb-3">
                     <input type="text" id="contacto-nombre" class="form-control" required>
                     <label for="contacto-nombre" class="form-label">Nombre *</label>
-                    <div class="invalid-feedback">El nombre es obligatorio</div>
+                    <div class="invalid-feedback">Por favor ingrese un nombre</div>
                 </div>
                 <div class="form-floating text-dark mb-3">
                     <input type="email" id="contacto-email" class="form-control" required>
                     <label for="contacto-email" class="form-label">Email *</label>
+					<div class="invalid-feedback">Por favor ingrese un email</div>
                 </div>
                 <div class="form-floating text-dark mb-3">
                     <textarea col="4" id="contacto-mensaje" class="form-control" style="height: 100px;" required></textarea>
                     <label for="contacto-mensaje" class="form-label">Mensaje *</label>
+					<div class="invalid-feedback">El mensaje no puede estar vacio</div>
                 </div>
 				<div class="form-floating text-dark mb-3">
 					<select class="form-select" id="contacto-vinculo">
@@ -119,6 +121,27 @@
                 </div>
                 <button id="submit" type="submit" class="btn btn-lg btn-green text-white">Enviar</button>
             </form>
+			<script>
+			(() => {
+				'use strict'
+
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				const forms = document.querySelectorAll('.needs-validation')
+
+				// Loop over them and prevent submission
+				Array.from(forms).forEach(form => {
+				form.addEventListener('submit', event => {
+				if (!form.checkValidity()) {
+					event.preventDefault()
+					event.stopPropagation()
+				}
+
+				form.classList.add('was-validated')
+				}, false)
+			})
+			})()
+			
+			</script>
             </div>
         </div>
     </footer>
