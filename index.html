@@ -13,11 +13,11 @@
     <link rel="icon" type="image/x-icon" href="/assets/images/logoGC.png">
     <title>Proyecto GC</title>
 </head>
-<body class="">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div id="menu" class="container-fluid">
-                <a href="./index-2.html" class="navbar-brand">
+                <a href="./index.html" class="navbar-brand">
                     <img src="assets/images/logoGC.png" 
                         alt="Logo" 
                         width="76" 
@@ -46,7 +46,7 @@
                 <h1 class="text-white fw-bold">Juntos en GC trabajamos</h1>
                 <h1 class="text-white fw-bolder">por una gran causa</h1>
                 <p class="text-white pt-3 fs-4 fw-light">Somos una organización sin fines de lucro que trabaja para mejorar la calidad de vida y educativa de niños, niñas y adolescentes en la ciudad de González Catán</p>
-                <button href="./html/inscripciones.html" id="btn-sumate" class="btn text-white mt-5 fw-semibold">Sumate</button>
+                <button href="./html/inscripciones.html" id="btn-sumate" class="btn mt-5 fw-semibold">Sumate</button>
                 <img src="./assets/images/">
             </div>
             <div class="col hero-image"></div>
@@ -87,22 +87,20 @@
                 <a href="tel:11 7102 6887" class="text-white text-decoration-none">Tel 11 7102 6887</a>
                 <a href="mailto:info@proyectogc.org" class="text-white text-decoration-none">info@proyectogc.org</a>
             </address>
-			
+
             <form class="needs-validation d-flex flex-column g-3" action="" novalidate>
                 <div class="form-floating text-dark mb-3">
                     <input type="text" id="contacto-nombre" class="form-control" required>
                     <label for="contacto-nombre" class="form-label">Nombre *</label>
-                    <div class="invalid-feedback">Por favor ingrese un nombre</div>
+                    <div class="invalid-feedback">El nombre es obligatorio</div>
                 </div>
                 <div class="form-floating text-dark mb-3">
                     <input type="email" id="contacto-email" class="form-control" required>
                     <label for="contacto-email" class="form-label">Email *</label>
-					<div class="invalid-feedback">Por favor ingrese un email</div>
                 </div>
                 <div class="form-floating text-dark mb-3">
                     <textarea col="4" id="contacto-mensaje" class="form-control" style="height: 100px;" required></textarea>
                     <label for="contacto-mensaje" class="form-label">Mensaje *</label>
-					<div class="invalid-feedback">El mensaje no puede estar vacio</div>
                 </div>
 				<div class="form-floating text-dark mb-3">
 					<select class="form-select" id="contacto-vinculo">
@@ -119,29 +117,8 @@
                     <input name="suscripcion-email" type="checkbox" class="form-check-input" value="" id="suscripcion-email">
                     <label for="suscripcion-email" class="form-check-label">¿Desea recibir novedades? (opcional)</label>
                 </div>
-                <button id="submit" type="submit" class="btn btn-lg btn-green text-white">Enviar</button>
+                <button id="submit" type="submit" class="btn btn-lg btn-form">Enviar</button>
             </form>
-			<script>
-			(() => {
-				'use strict'
-
-				// Fetch all the forms we want to apply custom Bootstrap validation styles to
-				const forms = document.querySelectorAll('.needs-validation')
-
-				// Loop over them and prevent submission
-				Array.from(forms).forEach(form => {
-				form.addEventListener('submit', event => {
-				if (!form.checkValidity()) {
-					event.preventDefault()
-					event.stopPropagation()
-				}
-
-				form.classList.add('was-validated')
-				}, false)
-			})
-			})()
-			
-			</script>
             </div>
         </div>
     </footer>

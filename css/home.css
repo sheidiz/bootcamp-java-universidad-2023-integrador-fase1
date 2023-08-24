@@ -2,35 +2,11 @@
 Facebook and Instagram icons from Icon8 https://icons8.com/
 <a  href="https://icons8.com/icon/78517/toggle">Toggle</a> icon by <a href="https://icons8.com">Icons8</a>
 
-
-
---sm: 576px;
-    --md: 768px;
-    --lg: 992px;
-    --xl: 1200px;
-    --xxl: 1400px;
-
-    
 */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
 
-:root{
-    --green-color: #5cc720;
-    --blue-color: #566fb8;
-    --light-blue-color: #3092fc;
-    --light-blue-color2: #64AEFF;
-    --light-grey-color: #dcddde;
-    --dark-blue-color: #40667c;
-    --dark-grey-color: #4c4d4f;
-    font-family: 'Montserrat', sans-serif;
-}
-header{
-    margin: 0 5%;
-}
-
 #header-image{
-    background-color: var(--dark-blue-color);
+    background-color: var(--light-blue-color);
 }
 #header-image h1{
     line-height: 4rem;
@@ -43,22 +19,23 @@ header{
     margin: 0 20%;
 }
 #btn-sumate{
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
     font-size: 1.5rem;
     padding: 0.5rem 6rem;
-    background-color: var(--green-color);
     border-radius: 54px;
 	border: none;
 }
 #btn-sumate:hover {
-	background-color: var(--dark-blue-color);
-	
-	box-shadow: 0 0 10px 0 var(--green-color) inset, 0 0 10px 4px var(--green-color);
+	background-color: unset;
+	color: var(--dark-blue-color);
+	box-shadow: 0 0 10px 0 var(--dark-blue-color) inset, 0 0 10px 4px var(--dark-blue-color);
 }
 .hero-image {
     position: relative;
     height: 800px;
     overflow: hidden;
-    background: url(./assets/images/DSC_0426.webp) no-repeat center;
+    background: url(/assets/images/DSC_0426.webp) no-repeat center;
     background-size: cover;
     white-space: pre-line;
 }
