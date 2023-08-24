@@ -20,8 +20,6 @@
                 <a href="./index.html" class="navbar-brand">
                     <img src="assets/images/logoGC.png" 
                         alt="Logo" 
-                        width="76" 
-                        height="77"
                         class="d-inline-block">
                         <span class="title fs-2">Proyecto <span>GC</span></span>
                 </a>
@@ -29,45 +27,50 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="miMenu" class="collapse navbar-collapse">
-                    <ul class="navbar-nav m-auto text-center d-flex justify-content-between">
-                        <li class="nav-item"><a href="./html/quienes-somos.html" class="nav-link mx-5 menu-info">Sobre nosotros</a></li>
-                        <li class="nav-item"><a href="./html/proyecto.html" class="nav-link mx-5 menu-info">Proyecto</a></li>
-                        <li class="nav-item"><a href="./html/actividades.html" class="nav-link mx-5 menu-info">Actividades</a></li>
-                        <li class="nav-item"><a href="./html/colabora.html" class="nav-link mx-5 menu-link">Colaborar</a></li>
-                        <li class="nav-item"><a href="./html/inscripciones.html" class="nav-link mx-5 menu-link">Inscripciones</a></li>
+                    <ul class="navbar-nav m-auto text-center d-flex">
+                        <li class="nav-item"><a href="./html/sobre-nosotros.html" class="nav-link me-3 me-xl-5 menu-info">Sobre nosotros</a></li>
+                        <li class="nav-item"><a href="./html/proyecto.html" class="nav-link me-3 me-xl-5 menu-info">Proyecto</a></li>
+                        <li class="nav-item"><a href="./html/actividades.html" class="nav-link me-3 me-xl-5 menu-info">Actividades</a></li>
+                        <li class="nav-item"><a href="./html/colabora.html" class="nav-link me-3 me-xl-5 menu-link">Colaborar</a></li>
+                        <li class="nav-item"><a href="./html/inscripciones.html" class="nav-link me-3 me-xl-5 menu-link">Inscripciones</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section id="header-image" class="d-flex">
-            <div class="col align-self-start">
-                <h1 class="text-white fw-bold">Juntos en GC trabajamos</h1>
-                <h1 class="text-white fw-bolder">por una gran causa</h1>
-                <p class="text-white pt-3 fs-4 fw-light">Somos una organización sin fines de lucro que trabaja para mejorar la calidad de vida y educativa de niños, niñas y adolescentes en la ciudad de González Catán</p>
-                <button href="./html/inscripciones.html" id="btn-sumate" class="btn mt-5 fw-semibold">Sumate</button>
-                <img src="./assets/images/">
+        <section id="header-image" class="d-flex flex-column flex-lg-row">
+            <div class="col pt-3 pt-lg-5 pb-0 pb-lg-3 text-center text-sm-start">
+                <h1 class="text-white fw-bold fs-1 ">Juntos trabajamos por una gran causa</h1>
+                <p class="text-white fs-4 pt-3 fw-light">Somos una organización sin fines de lucro que trabaja para mejorar la calidad de vida y educativa de niños, niñas y adolescentes en la ciudad de González Catán</p>
+                <button href="./html/inscripciones.html" id="btn-sumate" class="btn mt-3 mt-xl-4 fw-semibold mb-0 mb-xl-5">Sumate</button>
             </div>
             <div class="col hero-image"></div>
         </section>
 
 
-
-
-        <section id="informacion" class="container-fluid my-2 d-flex">
-            <div class="col-12 col-md-5 text-white align-self-center">
-                <h1>Somos una organización sin fines de lucro que trabaja para
-                    mejorar la calidad de vida y educativa!</h1>
-                <h4 class="fw-light">En GC ayudamos a niños, niñas y adolescentes en la ciudad de González Catán, articulando los siguientes tres ejes: 
-                </h4>
+        <section id="informacion" class="container-fluid my-5 text-center d-flex flex-column">
+            <div class="col">
+                <p class="d-block fs-1 fw-bold">Articulamos los siguientes ejes</p>
             </div>
-            <div class="col text-end align-self-start">
-                <div class="blob d-none d-sm-block">
-                    <img src="assets/images/blob.svg" alt="instagram" class="me-auto">
+            <div class="col">
+                <div class="d-inline-block mx-5 circle rounded-circle">
+                    <img src="./assets/images/crecimiento.svg" alt="">
+                    <p class="fw-semibold" id="circle-item">Crecimiento</p>
                 </div>
-                <img >
-            </div>
+                <div class="d-inline-block mx-5 circle rounded-circle">
+                    <img src="./assets/images/conocimiento.svg" alt="">
+                    <p class="fw-semibold" id="circle-item">Conocimiento</p>
+                </div>
+                <div class="d-inline-block mx-5 mb-5 circle rounded-circle">
+                    <img src="./assets/images/companerismo.svg" alt="">
+                    <p class="fw-semibold" id="circle-item">Compañerismo</p>
+                </div>
+            </div>     
+        </section>
+        <section id="video" class="text-center my-5">
+            <h4 class="fs-2 mb-3">Conocé más sobre el proyecto</h4>
+            <iframe src="https://www.youtube.com/embed/4a1-2oGlvHI" title="Proyecto GC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
     </main>
     <footer class="text-white p-3">
@@ -80,7 +83,7 @@
                 <img src="assets/images/icons8-facebook.svg" alt="instagram" class="rrss">
             </a>
 
-            <address class="">
+            <address>
                 Manzoni 1360
                 Gonzáles Catán
                 Buenos Aires Provincia

@@ -9,14 +9,7 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
     background-color: var(--light-blue-color);
 }
 #header-image h1{
-    line-height: 4rem;
-    font-size: 3rem;
-}
-#header-image h1:nth-child(1){
-    margin-top: 100px;
-}
-#header-image h1,#header-image p, #header-image #btn-sumate{
-    margin: 0 20%;
+    line-height: 3rem;
 }
 #btn-sumate{
     background-color: var(--dark-blue-color);
@@ -27,30 +20,108 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
 	border: none;
 }
 #btn-sumate:hover {
-	background-color: unset;
+	background-color: var(--white-color);
 	color: var(--dark-blue-color);
 	box-shadow: 0 0 10px 0 var(--dark-blue-color) inset, 0 0 10px 4px var(--dark-blue-color);
 }
 .hero-image {
     position: relative;
-    height: 800px;
-    overflow: hidden;
-    background: url(/assets/images/DSC_0426.webp) no-repeat center;
+    background: url(/assets/images/home-sm.jpg) no-repeat top;
     background-size: cover;
-    white-space: pre-line;
-}
-
-#informacion{
-    background-color: var(--light-blue-color);
+    padding-bottom: 50%;
 }
 
 
-@media (max-width:576px){
-    body{
-        margin:0;
+#informacion, #video{
+    color: var(--dark-blue-color);
+}
+#informacion .circle{
+    width: 300px;
+    height: 300px;
+    margin: 0 10px; /*para alinear con texto inferior*/
+}
+#informacion .circle:hover{
+    transform: scale(1.1);
+}
+#circle-item{
+    font-size: 1.8rem;
+}
+#video h4{
+    border: 2px double var(--dark-blue-color);
+    width: 30rem;
+    margin: 0 auto;
+}
+#video iframe{
+    width: 980px;
+    height: 537px;
+}
+
+
+/*BREAKPOINTS*/
+@media (max-width:576px){/*mas chico*/    
+    .hero-image{
+        margin-top: 5%;
     }
-    #hero-image{
-        height: 10rem;
-        background-size: cover;
+    #header-image h1,#header-image p, #header-image #btn-sumate{
+        margin: 0 10%;
+    }
+    #informacion .circle{
+        width: 90px;
+        height: 90px;
+    }
+    #circle-item{
+        font-size: 1rem;
+    }
+    #video iframe{
+        width: 421px;
+        height: 231px;
+    }
+    #video h4{
+        width: 25rem;
     }
 }
+@media (min-width:576px){/*sm*/
+    #informacion .circle{
+        width: 150px;
+        height: 150px;
+    }
+    #circle-item{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:768px){/*md*/
+    .hero-image {
+        background: url(/assets/images/home-md.jpg) no-repeat center;
+        padding-top: 5%;
+        padding-bottom: 50%;
+    }
+    #header-image h1,#header-image p, #header-image #btn-sumate{
+        margin: 0 10%;
+    }
+    #video iframe{
+        width: 735px;
+        height: 403px;
+    }
+}
+@media (min-width:992px){/*lg*/
+
+    .hero-image {
+        background: url(/assets/images/home-lg.jpg) no-repeat center;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width:1200px){/*xl*/
+    #header-image h1,#header-image p, #header-image #btn-sumate{
+        margin: 0 20%;
+    }
+    #video h4{
+        width: 980px;
+    }
+    #video iframe{
+        width: 980px;
+        height: 537px;
+    }
+}
+

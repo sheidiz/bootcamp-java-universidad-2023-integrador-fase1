@@ -15,6 +15,10 @@
 header{
     margin: 0 5% 0 5%;
 }
+#menu img{
+    width: 76px;
+    height: 77px;
+}
 #menu .title{
     color: var(--dark-grey-color);
     vertical-align: middle;
@@ -25,8 +29,6 @@ header{
 
 #miMenu ul li a{
     font-size: 1.2rem;
-    width: 14rem;
-    max-width: 180px;
     transition: all ease-in-out 300ms;
 }
 .menu-info{
@@ -63,8 +65,17 @@ footer .rrss{
     color: #2acc80;
 }
 
-@media (max-width:576px){
-    body{
-        margin:0;
+@media (max-width:768px){
+    #menu img{
+        width: 46px;
+        height: 45px;
+    }
+    #miMenu ul li a{
+        width: 100%;
+    }
+}
+@media(max-width:1200px){
+    header{
+        margin: 0;
     }
 }
