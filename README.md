@@ -29,4 +29,4 @@ componen, header, main y footer.
 ### A tener en consideración:
 ------
 - Obligatorio usar Bootstrap
--
+- Las imagenes tienen que cambiarse por resolucion
