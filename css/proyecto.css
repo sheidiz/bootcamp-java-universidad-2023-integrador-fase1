@@ -20,6 +20,14 @@
     font-weight: lighter;
     font-size: 1.25rem;
 }
+#proyectos .row .circle{
+    width: 8rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+#proyectos .row .circle img{
+    width: 6rem;
+}
 #proyectos .row blockquote{
     margin: 0 auto;
     padding-left: 1rem;
@@ -35,18 +43,35 @@
 }
 #se-parte h4{
     color: var(--white-color);
+    padding: 0.5rem;
+    background-color: var(--blue-color);
     font-size: 2rem;
     position: absolute;
     left: 70%;
     bottom: 50%;
 }
 #se-parte button{
-    color: var(--white-color);
+    background-color: var(--white-color);
+    color: var(--dark-blue-color);
     position: absolute;
-    left: 76%;
+    left: 70%;
     bottom: 40%;
+
+    font-size: 1.5rem;
+    padding: 0.5rem 4rem;
+    border-radius: 54px;
+	border: none;
 }
 @media (max-width:768px)/*md y mas chicas*/{
+    #proyectos .row .circle{
+        width: 5rem;
+    }
+    #proyectos .row .circle p{   
+        font-size: 0.7rem;
+    }
+    #proyectos .row .circle img{
+        width: 3rem;
+    }
     #proyectos .row blockquote{
         width: 100%;
     }
@@ -55,5 +80,26 @@
     }
     #proyectos .row p, #proyectos .row ul{
         font-size: 1rem;
+    }
+    #se-parte h4{
+        font-size: 1.5rem;
+        left: 50%;
+    }
+    #se-parte button{
+        left: 50%;
+        bottom: 42%;
+        padding: 0.2rem 3rem;
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 768px)and(max-width:1200px)/*lg y mas chicas*/{
+    #proyectos .row .circle{
+        width: 6rem;
+    }
+    #proyectos .row .circle p{   
+        font-size: 1rem!important;
+    }
+    #proyectos .row .circle img{
+        width: 4rem;
     }
 }
