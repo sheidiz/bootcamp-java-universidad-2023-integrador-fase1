@@ -1,0 +1,154 @@
+
+#principal .row{
+    background: url(../assets/images/quienes-somos-sm.webp) no-repeat top;
+    background-size: contain;
+    height: 700px;
+    width: 100%;
+}
+#principal .row .title{
+    position: absolute;
+    top: 350px;
+    left: 205px;
+    background-color: var(--dark-blue-color);
+    opacity: 0.8;
+    width: 18%;
+
+}
+#principal .row .title h1{
+    font-size: 3.5rem;
+    opacity: 1;
+}
+
+#principal .row p{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 500px;
+    left: 205px;
+    width: 30%;
+}
+
+/*VALORES*/
+/* .blockquote-wrapper {
+    display: flex;
+    max-height: 30vh;
+    padding: 0 10%;
+} */
+
+ /* Blockquote contenedor principal */
+.blockquote {
+    position: relative;
+    width: 30%;
+    max-width: 350px;
+    margin: 20px auto;
+    padding-right: 18px;
+    align-self: center;
+}
+
+ /* Blockquote header: borde y color de texto */
+.blockquote h1 {
+    position: relative; /* for pseudos */
+    color: var(--blue-color);
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 0;
+    border: solid 2.5px; /*grosor borde*/
+    border-radius:20px;
+    padding: 25px;
+}
+
+ /* Curvita */
+.blockquote h1:after {
+    content:"";
+    position: absolute;
+    border: 2.5px solid var(--blue-color);
+    border-radius: 0 50px 0 0;
+    width: 60px;
+    height: 50px;
+    bottom: -50px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3;
+}
+/*Borrador para la curvita*/
+.blockquote h1:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid var(--white-color);
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+ /* Blockquote subheader */
+.blockquote h4 {
+    position: relative;
+    color: var(--dark-blue-color);
+    font-size: 1.3rem;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:120px;
+    padding-left:12px;
+}
+
+
+
+ /* increase header size after 600px */
+ /* @media all and (min-width: 600px) {
+     .blockquote h1 {
+         font-size: 1.5rem;
+         line-height: 1.2;
+    }
+ 
+ }
+  */
+
+/*BREAKPOINTS*/
+@media (max-width:576px){/*mas chico*/ 
+    #principal .row{
+        height: 160px;
+    }
+    #principal .row .title{
+        top: 150px;
+        left: 10px;
+        width: 22%;
+    
+    }
+    #principal .row .title h1{
+        font-size: 1.2rem;
+    }
+    
+    #principal .row p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+        position: absolute;
+        bottom: 180px;
+        left: 250px;
+        width: 22%;
+    }
+    .blockquote h1{
+        font-size: 0.8rem;
+    }
+}
+@media (min-width:576px){/*sm*/
+}
+@media (min-width:768px){/*md*/
+    #principal .row{
+        background: url(../assets/images/quienes-somos-md.webp) no-repeat top;
+    }
+    
+}
+@media (min-width:992px){/*lg*/
+    #principal .row{
+        background: url(../assets/images/quienes-somos-lg.webp) no-repeat top;
+    }
+}
+@media (min-width:1200px){/*xl*/
+    #principal .row{
+        background: url(../assets/images/quienes-somos-lg.webp) no-repeat top;
+    }
+}
