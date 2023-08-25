@@ -1,0 +1,59 @@
+#hero-image{
+    background: url(../assets/images/proyecto-header-lg.webp) no-repeat center;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
+
+#proyectos .row img{
+    height: auto;
+    border-radius: 1.5rem;
+}
+#proyectos .row{
+    color: var(--dark-grey-color);
+}
+#proyectos .row h2{
+    font-weight: 600;
+    font-size: 3rem;
+}
+#proyectos .row p, #proyectos .row ul{
+    font-weight: lighter;
+    font-size: 1.25rem;
+}
+#proyectos .row blockquote{
+    margin: 0 auto;
+    padding-left: 1rem;
+    font-size: 2rem;
+    width: 80%;
+    border-left: 3px solid var(--green-color-1);
+}
+#se-parte{
+    background: url(../assets/images/proyecto-3.webp) no-repeat center;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
+#se-parte h4{
+    color: var(--white-color);
+    font-size: 2rem;
+    position: absolute;
+    left: 70%;
+    bottom: 50%;
+}
+#se-parte button{
+    color: var(--white-color);
+    position: absolute;
+    left: 76%;
+    bottom: 40%;
+}
+@media (max-width:768px)/*md y mas chicas*/{
+    #proyectos .row blockquote{
+        width: 100%;
+    }
+    #proyectos .row h2{
+        font-size: 2rem;
+    }
+    #proyectos .row p, #proyectos .row ul{
+        font-size: 1rem;
+    }
+}
