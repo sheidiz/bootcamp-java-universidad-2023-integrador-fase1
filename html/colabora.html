@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/377db36a40.js" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/animaciones.css">
+    <link rel="stylesheet" href="../css/colabora.css">
+	<link rel="icon" type="image/x-icon" href="../assets/images/logoGC.png">
+    <title>Proyecto GC | Quiero donar</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div id="menu" class="container-fluid">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/logoGC.png" 
+                        alt="Logo" 
+                        class="d-inline-block">
+                        <span class="title fs-2">Proyecto <span>GC</span></span>
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#miMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="miMenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav m-auto text-center d-flex">
+                        <li class="nav-item"><a href="./sobre-nosotros.html" class="nav-link me-3 me-xl-5 menu-info">Sobre nosotros</a></li>
+                        <li class="nav-item"><a href="./proyecto.html" class="nav-link me-3 me-xl-5 menu-info">Proyecto</a></li>
+                        <li class="nav-item"><a href="./actividades.html" class="nav-link me-3 me-xl-5 menu-info">Actividades</a></li>
+                        <li class="nav-item"><a href="./colabora.html" class="nav-link me-3 me-xl-5 menu-link">Colaborar</a></li>
+                        <li class="nav-item"><a href="./inscripciones.html" class="nav-link me-3 me-xl-5 menu-link">Inscripciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="header-image" class="d-flex flex-column flex-lg-row">
+            <div class="col pt-3 pt-lg-5 pb-0 pb-lg-3 text-center text-sm-start">
+                <h1 class="text-white fw-bold fs-1 mb-3 ">¡Se parte!</h1>
+                <p class="pill-number d-inline-block text-white fs-4 fw-light mb-2">
+                    <span class="fw-bold">4</span> años
+                </p>
+                <p class="pill-number d-inline-block text-white fs-4 fw-light">
+                    <span class="fw-bold">+200</span> corazones cambiados uno a uno
+                </p>
+            </div>
+            <div class="col hero-image"></div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-11 col-sm-5 img-thumbnail p-2">
+                    <img class="object-fit-cover rounded" src="../assets/images/colaborar-1.webp" alt="Quiero donar">
+                    <h3 class="mt-3 text-center rounded fw-normal">Apoyar a esta gran causa</h3>
+                    <p>Tu aporte es importante para seguir generando impacto en la vida de todos los niños que participan del Proyecto GC.</p>
+                    <p>Podes sumarte como Padrino becando a un niño.</p>
+                    <a class="btn w-100 fw-bold" href="./quiero-donar.html">Quiero donar</a>
+                </div>
+                <div class="col-11 mt-3 mt-sm-0 col-sm-5 img-thumbnail p-2">
+                    <img class="object-fit-cover rounded" src="../assets/images/colaborar-2.jpg" alt="Quiero ser voluntario">
+                    <h3 class="mt-3 text-center rounded fw-normal">Ser parte de voluntariado</h3>
+                    <p>¿Te gustaría sumarte a nuestro equipo de voluntarios?</p>
+                    <p>Para colaborar con esta gran causa como voluntario escribinos a <a href="mailto:info@proyectogc.org"> info@proyectogc.org</a></p>
+                    <a class="btn w-100 fw-bold" href="mailto:info@proyectogc.org?subject=Quiero%20ser%20voluntario">Quiero ser voluntario</a>
+                </div>
+            </div>
+        </div>
+    </main>
+	<footer class="text-white p-3">
+        <div class="container-fluid">
+            <h3 class="d-inline-block me-5 mb-3 fs-1">Contactanos</h3>
+            <a href="https://www.instagram.com/proyecto.gc" target="_blank" class="d-inline-block align-top">
+                <img src="../assets/images/icons8-instagram.svg" alt="instagram" class="rrss">
+            </a>
+            <a href="https://www.facebook.com/proyectogc.ong" target="_blank" class="d-inline-block align-top">
+                <img src="../assets/images/icons8-facebook.svg" alt="instagram" class="rrss">
+            </a>
+
+            <address>
+                Manzoni 1360
+                Gonzáles Catán
+                Buenos Aires Provincia
+                <a href="tel:11 7102 6887" class="text-white text-decoration-none">Tel 11 7102 6887</a>
+                <a href="mailto:info@proyectogc.org" class="text-white text-decoration-none">info@proyectogc.org</a>
+            </address>
+			
+            <form class="needs-validation d-flex flex-column g-3" action="" novalidate>
+                <div class="form-floating text-dark mb-3">
+                    <input type="text" id="contacto-nombre" class="form-control" required>
+                    <label for="contacto-nombre" class="form-label">Nombre *</label>
+                    <div class="invalid-feedback">Por favor ingrese un nombre</div>
+                </div>
+                <div class="form-floating text-dark mb-3">
+                    <input type="email" id="contacto-email" class="form-control" required>
+                    <label for="contacto-email" class="form-label">Email *</label>
+					<div class="invalid-feedback">Por favor ingrese un email</div>
+                </div>
+                <div class="form-floating text-dark mb-3">
+                    <textarea col="4" id="contacto-mensaje" class="form-control" style="height: 100px;" required></textarea>
+                    <label for="contacto-mensaje" class="form-label">Mensaje *</label>
+					<div class="invalid-feedback">El mensaje no puede estar vacio</div>
+                </div>
+				<div class="form-floating text-dark mb-3">
+					<select class="form-select" id="contacto-vinculo">
+						<option selected>Seleccionar</option>
+						<option value="voluntario">Voluntario</option>
+						<option value="donante">Donante</option>
+						<option value="madre-padre-tutor">Madre/Padre/Tutor</option>
+						<option value="comunidad">Comunidad</option>
+						<option value="empresa">Empresa</option>
+					</select>
+					<label for="contacto-vinculo">Vinculo</label>
+				</div>
+                <div class="form-check form-switch mb-3">
+                    <input name="suscripcion-email" type="checkbox" class="form-check-input" value="" id="suscripcion-email">
+                    <label for="suscripcion-email" class="form-check-label">¿Desea recibir novedades? (opcional)</label>
+                </div>
+                <button id="submit" type="submit" class="btn btn-lg btn-form">Enviar</button>
+            </form>
+			<script>
+			(() => {
+				'use strict'
+
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				const forms = document.querySelectorAll('.needs-validation')
+
+				// Loop over them and prevent submission
+				Array.from(forms).forEach(form => {
+				form.addEventListener('submit', event => {
+				if (!form.checkValidity()) {
+					event.preventDefault()
+					event.stopPropagation()
+				}
+
+				form.classList.add('was-validated')
+				}, false)
+			})
+			})()
+			
+			</script>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
