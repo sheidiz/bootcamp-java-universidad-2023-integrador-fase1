@@ -1,34 +1,36 @@
-
-#principal .row{
-    background: url(../assets/images/quienes-somos-sm.webp) no-repeat top;
+#header-image{
+    background-color: var(--light-blue-color);
+    height: 46vh;
+}
+.hero-image {
+    position: relative;
+    background: url(/assets/images/quienes-somos-sm.webp) no-repeat top;
     background-size: contain;
-    height: 700px;
-    width: 100%;
+    padding-bottom: 50%;
 }
-#principal .row .title{
-    position: absolute;
-    top: 350px;
-    left: 205px;
+
+
+#principal .row #hero-image h1{
     background-color: var(--dark-blue-color);
-    opacity: 0.8;
-    width: 18%;
-
-}
-#principal .row .title h1{
-    font-size: 3.5rem;
-    opacity: 1;
-}
-
-#principal .row p{
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    font-weight: 600;
+    padding: 0.5rem 1.6rem;
+    font-size: 3.2rem;
     position: absolute;
-    top: 500px;
-    left: 205px;
-    width: 30%;
+    bottom: 30%;
+    left: 2%;
 }
 
+#principal .row #hero-image p{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    width: 22%;
+}
+#valores h3{
+    color: var(--dark-blue-color);
+}
 /*VALORES*/
 /* .blockquote-wrapper {
     display: flex;
@@ -107,48 +109,72 @@
   */
 
 /*BREAKPOINTS*/
-@media (max-width:576px){/*mas chico*/ 
-    #principal .row{
-        height: 160px;
+@media (max-width:768px){/*md para abajo*/ 
+
+    #principal .row #hero-image h1, #principal .row #hero-image p{
+        text-align: center;
+        left: 0%;
+        width: 100%;
+        padding: 0.5rem 0;
     }
-    #principal .row .title{
-        top: 150px;
-        left: 10px;
-        width: 22%;
-    
+    #principal .row #hero-image h1{
+        font-size: 1.8rem;
+        bottom: 8%;
     }
-    #principal .row .title h1{
-        font-size: 1.2rem;
+    #principal .row #hero-image p{
+        font-size: 1rem;
+        bottom: -4%;
+        line-height: 1.2rem;
+        background-color: var(--green-color-1);
     }
-    
-    #principal .row p{
-        font-size: 1.5rem;
-        line-height: 2rem;
-        font-weight: 600;
-        position: absolute;
-        bottom: 180px;
-        left: 250px;
-        width: 22%;
+    .blockquote{
+        width: 48%;
     }
     .blockquote h1{
         font-size: 0.8rem;
     }
-}
-@media (min-width:576px){/*sm*/
-}
-@media (min-width:768px){/*md*/
-    #principal .row{
-        background: url(../assets/images/quienes-somos-md.webp) no-repeat top;
+    .blockquote h4{
+        font-size: 0.9rem;
+        padding-top: 10px;
+        padding-left: 42%;
+        margin-left: 0;
     }
-    
+    /*curvita*/
+    .blockquote h1:after{
+        height: 40px;
+        bottom: -40px;
+        left: 30px;
+    }
+}
+
+@media (min-width:768px)and(max-width:992px){/*md y mas grandes*/
+    #principal .row #hero-image{
+        background: url(../assets/images/quienes-somos-md.webp) no-repeat top;
+        height: 350px;
+    }
+    #principal .row #hero-image h1, #principal .row #hero-image p{
+        left: 2%;
+        padding: 0.5rem 0;
+    }
+    #principal .row #hero-image h1{
+        font-size: 1.8rem;
+        bottom: 20%;
+    }
+    #principal .row #hero-image p{
+        font-size: 1rem;
+        bottom: -4%;
+        line-height: 1.2rem;
+        width: 30%;
+    }
 }
 @media (min-width:992px){/*lg*/
-    #principal .row{
+    #principal .row #hero-image{
         background: url(../assets/images/quienes-somos-lg.webp) no-repeat top;
     }
+
 }
 @media (min-width:1200px){/*xl*/
-    #principal .row{
+    #principal .row #hero-image{
         background: url(../assets/images/quienes-somos-lg.webp) no-repeat top;
     }
 }
