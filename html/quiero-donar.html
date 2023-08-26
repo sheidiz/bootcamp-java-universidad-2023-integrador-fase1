@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/377db36a40.js" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/animaciones.css">
+    <link rel="stylesheet" href="../css/quiero-donar.css">
+	<link rel="icon" type="image/x-icon" href="../assets/images/logoGC.png">
+    <title>Proyecto GC | Quiero donar</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div id="menu" class="container-fluid">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/logoGC.png" 
+                        alt="Logo" 
+                        class="d-inline-block">
+                        <span class="title fs-2">Proyecto <span>GC</span></span>
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#miMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="miMenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav m-auto text-center d-flex">
+                        <li class="nav-item"><a href="./sobre-nosotros.html" class="nav-link me-3 me-xl-5 menu-info">Sobre nosotros</a></li>
+                        <li class="nav-item"><a href="./proyecto.html" class="nav-link me-3 me-xl-5 menu-info">Proyecto</a></li>
+                        <li class="nav-item"><a href="./actividades.html" class="nav-link me-3 me-xl-5 menu-info">Actividades</a></li>
+                        <li class="nav-item"><a href="./colabora.html" class="nav-link me-3 me-xl-5 menu-link">Colaborar</a></li>
+                        <li class="nav-item"><a href="./inscripciones.html" class="nav-link me-3 me-xl-5 menu-link">Inscripciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mb-5 px-0 px-3-sm">
+            <div class="row mx-3 mx-5-sm">
+                <h1 class="text-center">Quiero donar para esta gran causa</h1>
+            </div>
+            <div class="requisitos row mx-3 mx-5-sm">
+                <div class="col-12">
+                    <p class="fs-4 text-center">Dejanos tus datos y nos pondremos en contacto con vos</p>
+                </div>
+            </div>
+
+            <div class="row mt-3 mx-3 mx-5-sm">
+                <div class="col-12 col-md-6 text-center text-sm-start d-none d-lg-block">
+                    <img src="../assets/images/quiero-donar.webp" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <form class="row mt-3 mt-md-0 g-3 needs-validation" novalidate>
+                    <div class="col-md-7">
+                        <label for="donacion-nombreyapellido" class="form-label">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="donacion-nombreyapellido" required>
+                        <div class="invalid-feedback">* Debe ingresar un nombre y apellido.</div>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="donacion-edad" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="donacion-edad" min="0" required>
+                        <div class="invalid-feedback">* Debe ingresar una edad válida.</div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="formulario-email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="email" class="form-control" id="donacion-email" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">Debe ingresar un email válido.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="formulario-telefono" class="form-label">Número de telefono</label>
+                        <input type="text" class="form-control" id="donacion-telefono" required>
+                        <div class="invalid-feedback">Debe ingresar un número de telefono.</div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="formulario-mensaje" class="form-label">Mensaje</label>
+                        <textarea type="text" class="form-control" id="formulario-mensaje" required></textarea>
+                        <div class="invalid-feedback">Ingrese un mensaje.</div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-dark btn-lg w-100" type="submit">Enviar</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+	<footer class="text-white p-3">
+        <div class="container-fluid">
+            <h3 class="d-inline-block me-5 mb-3 fs-1">Contactanos</h3>
+            <a href="https://www.instagram.com/proyecto.gc" target="_blank" class="d-inline-block align-top">
+                <img src="../assets/images/icons8-instagram.svg" alt="instagram" class="rrss">
+            </a>
+            <a href="https://www.facebook.com/proyectogc.ong" target="_blank" class="d-inline-block align-top">
+                <img src="../assets/images/icons8-facebook.svg" alt="instagram" class="rrss">
+            </a>
+
+            <address>
+                Manzoni 1360
+                Gonzáles Catán
+                Buenos Aires Provincia
+                <a href="tel:11 7102 6887" class="text-white text-decoration-none">Tel 11 7102 6887</a>
+                <a href="mailto:info@proyectogc.org" class="text-white text-decoration-none">info@proyectogc.org</a>
+            </address>
+			
+            <form class="needs-validation d-flex flex-column g-3" action="" novalidate>
+                <div class="form-floating text-dark mb-3">
+                    <input type="text" id="contacto-nombre" class="form-control" required>
+                    <label for="contacto-nombre" class="form-label">Nombre *</label>
+                    <div class="invalid-feedback">Por favor ingrese un nombre</div>
+                </div>
+                <div class="form-floating text-dark mb-3">
+                    <input type="email" id="contacto-email" class="form-control" required>
+                    <label for="contacto-email" class="form-label">Email *</label>
+					<div class="invalid-feedback">Por favor ingrese un email</div>
+                </div>
+                <div class="form-floating text-dark mb-3">
+                    <textarea col="4" id="contacto-mensaje" class="form-control" style="height: 100px;" required></textarea>
+                    <label for="contacto-mensaje" class="form-label">Mensaje *</label>
+					<div class="invalid-feedback">El mensaje no puede estar vacio</div>
+                </div>
+				<div class="form-floating text-dark mb-3">
+					<select class="form-select" id="contacto-vinculo">
+						<option selected>Seleccionar</option>
+						<option value="voluntario">Voluntario</option>
+						<option value="donante">Donante</option>
+						<option value="madre-padre-tutor">Madre/Padre/Tutor</option>
+						<option value="comunidad">Comunidad</option>
+						<option value="empresa">Empresa</option>
+					</select>
+					<label for="contacto-vinculo">Vinculo</label>
+				</div>
+                <div class="form-check form-switch mb-3">
+                    <input name="suscripcion-email" type="checkbox" class="form-check-input" value="" id="suscripcion-email">
+                    <label for="suscripcion-email" class="form-check-label">¿Desea recibir novedades? (opcional)</label>
+                </div>
+                <button id="submit" type="submit" class="btn btn-lg btn-form">Enviar</button>
+            </form>
+			<script>
+			(() => {
+				'use strict'
+
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				const forms = document.querySelectorAll('.needs-validation')
+
+				// Loop over them and prevent submission
+				Array.from(forms).forEach(form => {
+				form.addEventListener('submit', event => {
+				if (!form.checkValidity()) {
+					event.preventDefault()
+					event.stopPropagation()
+				}
+
+				form.classList.add('was-validated')
+				}, false)
+			})
+			})()
+			
+			</script>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
