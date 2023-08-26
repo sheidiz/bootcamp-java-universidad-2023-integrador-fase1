@@ -1,0 +1,11 @@
+.container div:nth-child(1) h1 {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+}
+.requisitos p, .requisitos ul{
+
+}
+.requisitos img{
+    margin-top: 10%
+}
