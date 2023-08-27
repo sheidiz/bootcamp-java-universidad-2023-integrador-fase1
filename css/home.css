@@ -1,9 +1,6 @@
 /*
 Facebook and Instagram icons from Icon8 https://icons8.com/
-<a  href="https://icons8.com/icon/78517/toggle">Toggle</a> icon by <a href="https://icons8.com">Icons8</a>
-
 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
 
 #principal-banner{
     background-color: var(--light-blue-color);
@@ -38,7 +35,6 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
 #informacion, #video{
     color: var(--dark-blue-color);
 }
-
 #informacion .circle{
     width: 35%;
     font-size: 1.2rem;
