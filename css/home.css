@@ -5,13 +5,16 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
 
-#header-image{
+#principal-banner{
     background-color: var(--light-blue-color);
 }
-#header-image h1{
+#principal-banner div{
+    margin: 0 10%;
+}
+#principal-banner h1{
     line-height: 3rem;
 }
-#btn-sumate{
+#principal-banner #btn-sumate{
     background-color: var(--dark-blue-color);
     color: var(--white-color);
     font-size: 1.5rem;
@@ -19,109 +22,93 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
     border-radius: 54px;
 	border: none;
 }
-#btn-sumate:hover {
+#principal-banner #btn-sumate:hover {
 	background-color: var(--white-color);
 	color: var(--dark-blue-color);
 	box-shadow: 0 0 10px 0 var(--dark-blue-color) inset, 0 0 10px 4px var(--dark-blue-color);
 }
-.hero-image {
+#principal-banner .hero-image {
     position: relative;
     background: url(/assets/images/home-sm.jpg) no-repeat top;
     background-size: cover;
     padding-bottom: 50%;
+    margin: 5% 0 0 0!important;
 }
-
 
 #informacion, #video{
     color: var(--dark-blue-color);
 }
+
 #informacion .circle{
-    width: 300px;
-    height: 300px;
-    margin: 0 10px; /*para alinear con texto inferior*/
+    width: 35%;
+    font-size: 1.2rem;
+    text-align: center;
 }
 #informacion .circle:hover{
     transform: scale(1.1);
 }
-#circle-item{
-    font-size: 1.8rem;
+#informacion .circle img{
+    width: 60%;
 }
-#video h4{
-    border: 2px double var(--dark-blue-color);
-    width: 30rem;
-    margin: 0 auto;
-}
+
 #video iframe{
-    width: 980px;
-    height: 537px;
-}
-
-
-/*BREAKPOINTS*/
-@media (max-width:576px){/*mas chico*/    
-    .hero-image{
-        margin-top: 5%;
-    }
-    #header-image h1,#header-image p, #header-image #btn-sumate{
-        margin: 0 10%;
-    }
-    #informacion .circle{
-        width: 90px;
-        height: 90px;
-    }
-    #circle-item{
-        font-size: 1rem;
-    }
-    #video iframe{
-        width: 421px;
-        height: 231px;
-    }
-    #video h4{
-        width: 25rem;
-    }
-}
-@media (min-width:576px){/*sm*/
-    #informacion .circle{
-        width: 150px;
-        height: 150px;
-    }
-    #circle-item{
-        font-size: 1.5rem;
-    }
+    width: 90%;
+    height: 40vh;
 }
 
 @media (min-width:768px){/*md*/
-    .hero-image {
-        background: url(/assets/images/home-md.jpg) no-repeat center;
-        padding-top: 5%;
-        padding-bottom: 50%;
+    #principal-banner div{
+        margin: 0 5%;
     }
-    #header-image h1,#header-image p, #header-image #btn-sumate{
-        margin: 0 10%;
+    #principal-banner .hero-image {
+        background: url(/assets/images/home-md.jpg) no-repeat center;
+        /* padding-top: 5%; */
+        /* padding-bottom: 50%; */
+    }
+    #principal-banner h1{
+        padding-top: 1rem;
+    }
+    #informacion .circle{
+        font-size: 1.5rem;
+    }
+    #informacion .circle img{
+        width: 50%;
     }
     #video iframe{
-        width: 735px;
-        height: 403px;
+        width: 90%;
+        height: 50vh;
     }
 }
 @media (min-width:992px){/*lg*/
-
-    .hero-image {
+    #principal-banner .hero-image {
         background: url(/assets/images/home-lg.jpg) no-repeat center;
         padding-bottom: 0;
+        margin: 0!important;
+    }
+    #informacion .circle{
+        width: 25%;
+        text-align: center;
+    }
+    #informacion .circle img{
+        width: 60%;
+    }
+    #video iframe{
+        width: 60%;
+        height: 50vh;
     }
 }
 
 @media (min-width:1200px){/*xl*/
-    #header-image h1,#header-image p, #header-image #btn-sumate{
-        margin: 0 20%;
+    #informacion .circle{
+        width: 15%;
+        text-align: center;
     }
-    #video h4{
-        width: 980px;
+    #informacion .circle img{
+        width: 60%;
     }
     #video iframe{
-        width: 980px;
-        height: 537px;
+        width: 50%;
+        height: 60vh;
     }
 }
 

@@ -46,6 +46,10 @@ header{
 footer{
     background-color: var(--dark-grey-color);
 }
+footer h3{
+    background-color: var(--blue-color);
+    padding: 2px;
+}
 footer address{
     white-space: pre-line;
 }
@@ -53,7 +57,7 @@ footer .rrss{
     height: 2.5rem;
 }
 .btn-form, .btn-form:hover{
-    background-color: var(--green-color-1);
+    background-color: var(--blue-color);
     border: none;
 }
 
