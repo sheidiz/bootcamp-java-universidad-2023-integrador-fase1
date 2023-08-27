@@ -52,6 +52,12 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
     height: 40vh;
 }
 
+/*Animaciones*/
+#principal-banner div:nth-child(1),#informacion,#video{
+    animation: fadeFromRight 1s 1 linear 0s;
+}
+
+/*Breakpoints*/
 @media (min-width:768px){/*md*/
     #principal-banner div{
         margin: 0 5%;
@@ -93,7 +99,6 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
         height: 50vh;
     }
 }
-
 @media (min-width:1200px){/*xl*/
     #informacion .circle{
         width: 15%;

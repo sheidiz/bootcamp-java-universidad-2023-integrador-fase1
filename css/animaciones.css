@@ -1,16 +1,12 @@
-.blob img{
-    position: relative;
-    overflow-x:hidden;
-    height: 500px;
-    animation-name: flota;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;  
-}
-@keyframes flota {
-    0% { transform: translate(0,  0px); }
-    50% { transform: translate(0, 15px); }
-    100% { transform: translate(0, -0px); }    
+@keyframes fadeFromRight{
+    0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
-/*QUIENES SOMOS*/
