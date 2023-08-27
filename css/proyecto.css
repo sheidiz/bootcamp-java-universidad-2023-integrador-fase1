@@ -65,6 +65,11 @@
 	border: none;
 }
 
+/*Animations*/
+#proyectos #img-1, #proyectos .circle{
+    animation: fadeFromRight 1s 1 linear 0s;
+}
+
 /*Breakpoints*/
 @media (min-width: 768px)/*lg*/{
     #proyectos .row .circle{
