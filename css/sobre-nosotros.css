@@ -1,49 +1,47 @@
-#header-image{
+#principal-banner{
     background-color: var(--light-blue-color);
-    height: 46vh;
 }
-.hero-image {
-    position: relative;
-    background: url(/assets/images/quienes-somos-sm.webp) no-repeat top;
-    background-size: contain;
-    padding-bottom: 50%;
+#principal-banner div{
+    margin: 0 10%;
 }
-
-#principal .row #hero-image h1{
+#principal-banner h1{
+    line-height: 3rem;
+}
+#principal-banner #btn-sumate{
     background-color: var(--dark-blue-color);
-    padding: 0.5rem 1.6rem;
-    font-size: 3.2rem;
-    position: absolute;
-    bottom: 30%;
-    left: 2%;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 6rem;
+    border-radius: 54px;
+	border: none;
+}
+#principal-banner #btn-sumate:hover {
+	background-color: var(--white-color);
+	color: var(--dark-blue-color);
+	box-shadow: 0 0 10px 0 var(--dark-blue-color) inset, 0 0 10px 4px var(--dark-blue-color);
+}
+#principal-banner .hero-image {
+    position: relative;
+    background: url(../assets/images/quienes-somos-sm.webp) no-repeat top;
+    background-size: cover;
+    padding-bottom: 50%;
+    margin: 5% 0 0 0!important;
 }
 
-#principal .row #hero-image p{
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    font-weight: 400;
-    position: absolute;
-    bottom: 5%;
-    left: 2%;
-    width: 22%;
+#figure-1,#figure-2,#figure-3{
+    display: none;
 }
+
 #valores h3{
     color: var(--dark-blue-color);
 }
-/*VALORES*/
-/* .blockquote-wrapper {
-    display: flex;
-    max-height: 30vh;
-    padding: 0 10%;
-} */
 
  /* Blockquote contenedor principal */
 .blockquote {
     position: relative;
-    width: 30%;
+    width: 48%;
     max-width: 350px;
     margin: 20px auto;
-    padding-right: 18px;
     align-self: center;
 }
 
@@ -51,12 +49,12 @@
 .blockquote h1 {
     position: relative; /* for pseudos */
     color: var(--blue-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: normal;
     margin: 0;
     border: solid 2.5px; /*grosor borde*/
     border-radius:20px;
-    padding: 25px;
+    padding: 20px;
 }
 
  /* Curvita */
@@ -66,9 +64,9 @@
     border: 2.5px solid var(--blue-color);
     border-radius: 0 50px 0 0;
     width: 60px;
-    height: 50px;
-    bottom: -50px;
-    left: 50px;
+    height: 40px;
+    bottom: -40px;
+    left: 30px;
     border-bottom: none;
     border-left: none;
     z-index: 3;
@@ -87,93 +85,91 @@
 .blockquote h4 {
     position: relative;
     color: var(--dark-blue-color);
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     margin: 0;
-    padding-top: 15px;
     z-index: 1;
-    margin-left:120px;
-    padding-left:12px;
+    padding-top: 10px;
+    padding-left: 42%;
 }
 
 
-
- /* increase header size after 600px */
- /* @media all and (min-width: 600px) {
-     .blockquote h1 {
-         font-size: 1.5rem;
-         line-height: 1.2;
-    }
- 
- }
-  */
-
-/*BREAKPOINTS*/
-@media (max-width:768px){/*md para abajo*/ 
-
-    #principal .row #hero-image h1, #principal .row #hero-image p{
-        text-align: center;
-        left: 0%;
-        width: 100%;
-        padding: 0.5rem 0;
-    }
-    #principal .row #hero-image h1{
-        font-size: 1.8rem;
-        bottom: 8%;
-    }
-    #principal .row #hero-image p{
-        font-size: 1rem;
-        bottom: -4%;
-        line-height: 1.2rem;
-        background-color: var(--green-color-1);
-    }
-    .blockquote{
-        width: 48%;
-    }
-    .blockquote h1{
-        font-size: 0.8rem;
-    }
-    .blockquote h4{
-        font-size: 0.9rem;
-        padding-top: 10px;
-        padding-left: 42%;
-        margin-left: 0;
-    }
-    /*curvita*/
-    .blockquote h1:after{
-        height: 40px;
-        bottom: -40px;
-        left: 30px;
+@media (min-width:576px){
+    #principal-banner .hero-image{
+        margin: 0!important;
     }
 }
-
-@media (min-width:768px)and(max-width:992px){/*md y mas grandes*/
-    #principal .row #hero-image{
-        background: url(../assets/images/quienes-somos-md.webp) no-repeat top;
-        height: 350px;
+@media (min-width:768px){/*md*/
+    #principal-banner div{
+        margin: 5%;
     }
-    #principal .row #hero-image h1, #principal .row #hero-image p{
-        left: 2%;
-        padding: 0.5rem 0;
+    #principal-banner .hero-image {
+        background: url(../assets/images/quienes-somos-md.webp) no-repeat center;
     }
-    #principal .row #hero-image h1{
-        font-size: 1.8rem;
-        bottom: 20%;
+    .blockquote {
+        width: 45%;
     }
-    #principal .row #hero-image p{
-        font-size: 1rem;
-        bottom: -4%;
-        line-height: 1.2rem;
-        width: 30%;
+     /* Blockquote header: borde y color de texto */
+    .blockquote h1 {
+        font-size: 1.1rem;
+    }
+     /* Curvita */
+    .blockquote h1:after {
+        height: 50px;
+        bottom: -50px;
+        left: 50px;
+    }
+     /* Blockquote subheader */
+    .blockquote h4 {
+        font-size: 1.3rem;
+        padding-top: 15px;
+        padding-left:12px;
+        margin-left:120px;
     }
 }
 @media (min-width:992px){/*lg*/
-    #principal .row #hero-image{
-        background: url(../assets/images/quienes-somos-lg.webp) no-repeat top;
+    #principal-banner .hero-image {
+        background: url(../assets/images/quienes-somos-lg.webp) no-repeat center;
+        padding-bottom: 0;
+        margin: 0!important;
     }
-
-}
-@media (min-width:1200px){/*xl*/
-    #principal .row #hero-image{
-        background: url(../assets/images/quienes-somos-lg.webp) no-repeat top;
+    .blockquote {
+        width: 30%;
+    }
+     /* Blockquote header: borde y color de texto */
+    .blockquote h1 {
+        font-size: 1.4rem;
+    }
+     /* Curvita */
+    .blockquote h1:after {
+        height: 50px;
+        bottom: -50px;
+        left: 50px;
+    }
+     /* Blockquote subheader */
+    .blockquote h4 {
+        font-size: 1.3rem;
+        padding-top: 15px;
+        padding-left:12px;
+        margin-left:120px;
+    }
+    #figure-1{
+        display: block;
+        margin-left: 15%;
+        margin-top: -10%;
+        height: 8rem;
+        margin-bottom: 5%;
+    }
+    #figure-2{
+        display: block;
+        margin-left: 75%;
+        margin-top: -15%;
+        margin-bottom: 5%;
+        height: 10rem;
+    }
+    #figure-3{
+        display: block;
+        margin-left: 25%;
+        margin-top: -2%;
+        height: 4rem;
     }
 }
