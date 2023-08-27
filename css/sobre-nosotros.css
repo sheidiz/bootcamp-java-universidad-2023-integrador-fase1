@@ -44,7 +44,6 @@
     margin: 20px auto;
     align-self: center;
 }
-
  /* Blockquote header: borde y color de texto */
 .blockquote h1 {
     position: relative; /* for pseudos */
@@ -56,7 +55,6 @@
     border-radius:20px;
     padding: 20px;
 }
-
  /* Curvita */
 .blockquote h1:after {
     content:"";
@@ -92,7 +90,15 @@
     padding-left: 42%;
 }
 
+/*Animations*/
+#principal-banner div:nth-child(1){
+    animation: fadeFromRight 1s 1 linear 0s;
+}
+#valores,#figure-1,#figure-2,#figure-3{
+    animation: fadeCenter 2s 1 linear 0s;
+}
 
+/*Breakpoints*/
 @media (min-width:576px){
     #principal-banner .hero-image{
         margin: 0!important;
