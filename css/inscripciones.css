@@ -1,11 +1,23 @@
-.container div:nth-child(1) h1 {
+.container div h1 {
     background-color: var(--blue-color);
     color: var(--white-color);
     padding: 0.5rem;
 }
-.requisitos p, .requisitos ul{
-
+.requisitos{
+    color: var(--blue-color);
 }
 .requisitos img{
     margin-top: 10%
+}
+#btn-form{
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 6rem;
+	border: none;
+}
+#btn-form:hover {
+	background-color: var(--white-color);
+	color: var(--dark-blue-color);
+	box-shadow: 0 0 10px 0 var(--dark-blue-color) inset, 0 0 10px 4px var(--dark-blue-color);
 }

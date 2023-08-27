@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="../css/animaciones.css">
     <link rel="stylesheet" href="../css/inscripciones.css">
 	<link rel="icon" type="image/x-icon" href="../assets/images/logoGC.png">
-    <title>Proyecto GC | Proyecto</title>
+    <title>Proyecto GC | Inscripciones</title>
 </head>
 <body>
     <header>
@@ -44,144 +44,141 @@
                 <h1 class="text-center">Inscripciones 2023</h1>
             </div>
             <div class="requisitos row mx-3 mx-5-sm">
-                <div class="col-10">
-                    <p class="fs-4">Requisitos de inscripción:</p>
+                <div class="col-12 col-md-10">
+                    <p class="fs-4 text-uppercase">Requisitos de inscripción:</p>
                     <ul class="fs-5">
-                        <li>Tener entre 5 y hasta 1 años de edad</li>
+                        <li>Tener entre 5 y hasta 11 años de edad</li>
                         <li>Tener acompañamiento de la familia durante el ciclo lectivo</p></li>
                     </ul>
-                    <p class="fs-4">Para comenzar con el proceso de inscripción deben completar el siguiente formulario:</p>
+                    <p class="fs-4 text-uppercase">Para comenzar con el proceso de inscripción deben completar el siguiente formulario:</p>
                 </div>
-                <div class="col-2">
-                    <img class="w-100" src="../assets/images/gc.png" alt="">
+                <div class="col-2 d-none d-md-block">
+                    <img class="w-100" src="../assets/images/figures/figure-1.png" alt="">
                 </div>
             </div>
 
-            <div class="row mt-3 mx-3 mx-5-sm">
-                <div class="col-12 col-md-6 text-center text-sm-start">
+            <div class="row mt-3 mx-3 mx-5-lg">
+                <div class="col-12 col-lg-6 text-center text-sm-start">
                     <img src="../assets/images/inscripciones.webp" alt="">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <form class="row mt-3 mt-md-0 g-3 needs-validation" novalidate>
-                    <div class="col-md-12 mt-0">
-                        <label for="formulario-tutor" class="form-label">Nombre y apellido (madre/padre/tutor)</label>
-                        <input type="text" class="form-control" id="formulario-tutor" required>
-                        <div class="invalid-feedback">* Debe ingresar nombre de madre, padre o tutor.</div>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="formulario-alumno" class="form-label">Nombre y apellido del alumno/a</label>
-                        <input type="text" class="form-control" id="formulario-alumno" required>
-                        <div class="invalid-feedback">* Debe ingresar nombre del alumno/a.</div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="formulario-email" class="form-label">Email</label>
-                        <div class="input-group">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="email" class="form-control" id="formulario-email" aria-describedby="inputGroupPrepend" required>
-                            <div class="invalid-feedback">Debe ingresar un email válido.</div>
+                        <div class="col-md-12 mt-0">
+                            <label for="formulario-tutor" class="form-label">Nombre y apellido (madre/padre/tutor)</label>
+                            <input type="text" class="form-control" id="formulario-tutor" required>
+                            <div class="invalid-feedback">* Debe ingresar nombre de madre, padre o tutor.</div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="formulario-telefono" class="form-label">Número de telefono</label>
-                        <input type="text" class="form-control" id="formulario-telefono" required>
-                        <div class="invalid-feedback">Debe ingresar un número de telefono.</div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="formulario-turno" class="form-label">Turno</label>
-                        <select class="form-select" id="formulario-turno" required>
-                            <option selected disabled value="">Turno...</option>
-                            <option value="turno-manana">Mañana</option>
-                            <option value="turno-tarde">Tarde</option>
-                        </select>
-                        <div class="invalid-feedback">Seleccione el turno deseado.</div>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="formulario-mensaje" class="form-label">Mensaje</label>
-                        <textarea type="text" class="form-control" id="formulario-mensaje" required></textarea>
-                        <div class="invalid-feedback">Ingrese un mensaje.</div>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-dark btn-lg w-100" type="submit">Enviar</button>
-                    </div>
+                        <div class="col-md-12">
+                            <label for="formulario-alumno" class="form-label">Nombre y apellido del alumno/a</label>
+                            <input type="text" class="form-control" id="formulario-alumno" required>
+                            <div class="invalid-feedback">* Debe ingresar nombre del alumno/a.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formulario-email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="email" class="form-control" id="formulario-email" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">Debe ingresar un email válido.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formulario-telefono" class="form-label">Número de telefono</label>
+                            <input type="text" class="form-control" id="formulario-telefono" required>
+                            <div class="invalid-feedback">Debe ingresar un número de telefono.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formulario-turno" class="form-label">Turno</label>
+                            <select class="form-select" id="formulario-turno" required>
+                                <option selected disabled value="">Turno...</option>
+                                <option value="turno-manana">Mañana</option>
+                                <option value="turno-tarde">Tarde</option>
+                            </select>
+                            <div class="invalid-feedback">Seleccione el turno deseado.</div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="formulario-mensaje" class="form-label">Mensaje</label>
+                            <textarea type="text" class="form-control" id="formulario-mensaje" required></textarea>
+                            <div class="invalid-feedback">Ingrese un mensaje.</div>
+                        </div>
+                        <div class="col-12">
+                            <button id="btn-form" class="btn btn-lg w-100 fw-semibold" type="submit">Enviar</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </main>
 	<footer class="text-white p-3">
-        <div class="container-fluid">
-            <h3 class="d-inline-block me-5 mb-3 fs-1">Contactanos</h3>
-            <a href="https://www.instagram.com/proyecto.gc" target="_blank" class="d-inline-block align-top">
-                <img src="../assets/images/icons8-instagram.svg" alt="instagram" class="rrss">
-            </a>
-            <a href="https://www.facebook.com/proyectogc.ong" target="_blank" class="d-inline-block align-top">
-                <img src="../assets/images/icons8-facebook.svg" alt="instagram" class="rrss">
-            </a>
+        <div class="container">
+            <div class="row justify-content-center">
 
-            <address>
-                Manzoni 1360
-                Gonzáles Catán
-                Buenos Aires Provincia
-                <a href="tel:11 7102 6887" class="text-white text-decoration-none">Tel 11 7102 6887</a>
-                <a href="mailto:info@proyectogc.org" class="text-white text-decoration-none">info@proyectogc.org</a>
-            </address>
-			
-            <form class="needs-validation d-flex flex-column g-3" action="" novalidate>
-                <div class="form-floating text-dark mb-3">
-                    <input type="text" id="contacto-nombre" class="form-control" required>
-                    <label for="contacto-nombre" class="form-label">Nombre *</label>
-                    <div class="invalid-feedback">Por favor ingrese un nombre</div>
+                <div class="col-10 col-md-4">
+                    <h3 class="d-inline-block fs-1">Contactanos</h3>
+                    <address>Manzoni 1360
+                        Gonzáles Catán
+                        Buenos Aires Provincia
+                        <a href="tel:11 7102 6887" class="text-white text-decoration-none">Tel 11 7102 6887</a>
+                        <a href="mailto:info@proyectogc.org" class="text-white text-decoration-none">info@proyectogc.org</a>
+                    </address>
+                    <a href="https://www.facebook.com/proyectogc.ong" target="_blank" class="d-inline-block align-top">
+                        <img src="../assets/images/icons8-facebook.svg" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/proyecto.gc" target="_blank" class="d-inline-block align-top">
+                        <img src="../assets/images/icons8-instagram.svg" alt="instagram">
+                    </a>
+                    <img class="d-block mb-3"src="../assets/images/logoGC_slogan.png" alt="">
                 </div>
-                <div class="form-floating text-dark mb-3">
-                    <input type="email" id="contacto-email" class="form-control" required>
-                    <label for="contacto-email" class="form-label">Email *</label>
-					<div class="invalid-feedback">Por favor ingrese un email</div>
+                
+                <div class="col-10 col-md-4">
+                    <form class="needs-validation d-flex flex-column g-3" action="" novalidate>
+                        <div class="form-floating text-dark mb-3">
+                            <input type="text" id="contacto-nombre" class="form-control" required>
+                            <label for="contacto-nombre" class="form-label">Nombre *</label>
+                            <div class="invalid-feedback">Debe ingresar un nombre</div>
+                        </div>
+                        <div class="form-floating text-dark mb-3">
+                            <input type="email" id="contacto-email" class="form-control" required>
+                            <label for="contacto-email" class="form-label">Email *</label>
+                            <div class="invalid-feedback">Debe ingresar un email</div>
+                        </div>
+                        <div class="form-floating text-dark mb-3">
+                            <textarea col="4" id="contacto-mensaje" class="form-control" style="height: 100px;" required></textarea>
+                            <label for="contacto-mensaje" class="form-label">Mensaje *</label>
+                            <div class="invalid-feedback">Debe ingresar un mensaje</div>
+                        </div>
+                        <div class="form-check form-switch mb-3">
+                            <input name="suscripcion-email" type="checkbox" class="form-check-input" value="" id="suscripcion-email">
+                            <label for="suscripcion-email" class="form-check-label">¿Desea recibir novedades? (opcional)</label>
+                        </div>
+                        <button id="submit" type="submit" class="btn btn-lg btn-form">Enviar</button>
+                    </form>
+                    <script>
+                        (() => {
+                            'use strict'
+            
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            const forms = document.querySelectorAll('.needs-validation')
+            
+                            // Loop over them and prevent submission
+                            Array.from(forms).forEach(form => {
+                            form.addEventListener('submit', event => {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+            
+                            form.classList.add('was-validated')
+                            }, false)
+                        })
+                        })()
+                        
+                        </script>
                 </div>
-                <div class="form-floating text-dark mb-3">
-                    <textarea col="4" id="contacto-mensaje" class="form-control" style="height: 100px;" required></textarea>
-                    <label for="contacto-mensaje" class="form-label">Mensaje *</label>
-					<div class="invalid-feedback">El mensaje no puede estar vacio</div>
-                </div>
-				<div class="form-floating text-dark mb-3">
-					<select class="form-select" id="contacto-vinculo">
-						<option selected>Seleccionar</option>
-						<option value="voluntario">Voluntario</option>
-						<option value="donante">Donante</option>
-						<option value="madre-padre-tutor">Madre/Padre/Tutor</option>
-						<option value="comunidad">Comunidad</option>
-						<option value="empresa">Empresa</option>
-					</select>
-					<label for="contacto-vinculo">Vinculo</label>
-				</div>
-                <div class="form-check form-switch mb-3">
-                    <input name="suscripcion-email" type="checkbox" class="form-check-input" value="" id="suscripcion-email">
-                    <label for="suscripcion-email" class="form-check-label">¿Desea recibir novedades? (opcional)</label>
-                </div>
-                <button id="submit" type="submit" class="btn btn-lg btn-form">Enviar</button>
-            </form>
-			<script>
-			(() => {
-				'use strict'
 
-				// Fetch all the forms we want to apply custom Bootstrap validation styles to
-				const forms = document.querySelectorAll('.needs-validation')
-
-				// Loop over them and prevent submission
-				Array.from(forms).forEach(form => {
-				form.addEventListener('submit', event => {
-				if (!form.checkValidity()) {
-					event.preventDefault()
-					event.stopPropagation()
-				}
-
-				form.classList.add('was-validated')
-				}, false)
-			})
-			})()
-			
-			</script>
             </div>
+
         </div>
+        
     </footer>
 </body>
 </html>
