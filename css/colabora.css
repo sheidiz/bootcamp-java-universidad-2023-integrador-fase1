@@ -1,37 +1,31 @@
 #header-image{
     background-color: var(--green-color-1);
-    height: 40vh;
+    height: 55vh;
+    vertical-align: center;
 }
 #header-image h1{
     line-height: 3rem;
 }
-#header-image p span{
-    background-color: var(--white-color);
-    color: var(--green-color-2);
-    border-radius: 10%;
-    padding: 0.2rem 0.8rem;
-}
-#btn-sumate{
-    background-color: var(--green-color-2);
-    border: 2px solid var(--white-color);
-    color: var(--white-color);
-    font-size: 1.5rem;
-    padding: 0.5rem 6rem;
-    border-radius: 54px;
-}
-#btn-sumate:hover {
-	background-color: var(--white-color);
-	color: var(--green-color-2);
-	box-shadow: 0 0 10px 0 var(--green-color-2) inset, 0 0 10px 4px var(--green-color-2);
+#header-image h1,#header-image p{
+    margin: 0 10%;
 }
 .hero-image {
     position: relative;
-    background: url(/assets/images/home-sm.jpg) no-repeat top;
+    background: url(/assets/images/colaborar-header.webp) no-repeat top;
     background-size: cover;
     padding-bottom: 50%;
+    margin-top: 5%;
+}
+#colaborar h3{
+    color: var(--blue-color);
+    margin-bottom: 0;
+}
+.img-thumbnail{
+    box-shadow: 10px 10px 10px 0px var(--grey-color);
 }
 .img-thumbnail h3, .img-thumbnail p, .img-thumbnail a{
     width: 100%;
+    color: var(--dark-grey-color);
 }
 .img-thumbnail img{
     width: 100%;
@@ -39,7 +33,7 @@
     text-align: center;
 }
 .img-thumbnail h3{
-    background-color: var(--light-blue-color);
+    background-color: var(--blue-color);
     color: var(--white-color);
     padding: 0.5rem;
 }
@@ -47,45 +41,55 @@
     color: var(--light-blue-color);
 }
 .img-thumbnail .btn{
-    background-color: var(--green-color-2);
+    background-color: var(--green-color-1);
     color: var(--white-color);
 }
 .img-thumbnail .btn:hover{
-    border: 2px solid var(--green-color-2);
-    color: var(--green-color-2);
+    border: 2px solid var(--green-color-1);
+    color: var(--green-color-1);
     background-color: var(--white-color);
 }
 
 /*BREAKPOINTS*/
-@media (max-width:576px){/*mas chico*/    
+@media (min-width:578px){/*sm*/
+    #header-image{
+        height: 70vh;
+    }
     .hero-image{
-        margin-top: 5%;
-    }
-    #header-image h1,#header-image p, #header-image #btn-sumate{
-        margin: 0 10%;
-    }
-
-}
-
-@media (min-width:768px){/*md*/
-    .hero-image {
-        background: url(/assets/images/home-md.jpg) no-repeat center;
-        padding-top: 5%;
         padding-bottom: 50%;
     }
-    #header-image h1,#header-image p, #header-image #btn-sumate{
+    #colaborar{
+        padding-top: 10%;
+    }
+}
+@media (min-width:768px){/*md*/
+    .hero-image {
+        background: url(/assets/images/colaborar-header.webp) no-repeat top;
+        padding-bottom: 50%;
+    }
+    #header-image h1,#header-image p{
         margin: 0 10%;
     }
 }
 @media (min-width:992px){/*lg*/
+    #header-image{
+        height: 45vh;
+    }
     .hero-image {
-        background: url(/assets/images/home-lg.jpg) no-repeat center;
-        padding-bottom: 0;
+        background: url(/assets/images/colaborar-header.webp) no-repeat top;
+        padding: 0;
+        margin: 0;
+    }
+    #colaborar{
+        padding-top: 2%;
     }
 }
 
 @media (min-width:1200px){/*xl*/
-    #header-image h1,#header-image p, #header-image #btn-sumate{
+    #header-image{
+        height: 45vh;
+    }
+    #header-image h1,#header-image p{
         margin: 0 20%;
     }
 }

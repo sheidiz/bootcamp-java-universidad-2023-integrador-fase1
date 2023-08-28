@@ -9,3 +9,16 @@
 .requisitos img{
     margin-top: 10%
 }
+
+form #btn-enviar{
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 6rem;
+	border: none;
+}
+form #btn-enviar:hover {
+	background-color: var(--white-color);
+	color: var(--dark-blue-color);
+	box-shadow: 0 0 10px 0 var(--dark-blue-color) inset, 0 0 10px 4px var(--dark-blue-color);
+}
