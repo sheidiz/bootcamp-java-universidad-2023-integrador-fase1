@@ -17,14 +17,16 @@ main{
     background-color: var(--blue-color);
     color: var(--white-color);
     padding: 0.5rem;
+    max-width: 220px;
 }
 #actividades p{
     font-size: 1rem;
     text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 /*Personalizando el carousel*/
-.slick-carousel div img{
+.slick-carousel-1 div img, .slick-carousel-2 div img{
     height: 200px;
 }
 .slick-next, .slick-prev{
@@ -49,12 +51,17 @@ main{
     font-size: 10px;
 }
 
+/*Breakpoints*/
 @media (min-width: 768px){/*lg*/
     #hero-image{
         height: 300px;
     }
-    #img{
-        height: 400px;
+    #actividades #img{
+        height: 300px;
+        margin-top: 10%;
+    }
+    #actividades p{
+        font-size: 0.9rem;
     }
 }
 @media (min-width: 1200px){/*xl*/
