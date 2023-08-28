@@ -22,7 +22,7 @@
 }
 #principal-banner .hero-image {
     position: relative;
-    background: url(../assets/images/quienes-somos-sm.webp) no-repeat top;
+    background: url(../assets/images/quienes-somos/quienes-somos-sm.webp) no-repeat top;
     background-size: cover;
     padding-bottom: 50%;
     margin: 5% 0 0 0!important;
@@ -39,7 +39,6 @@
  /* Blockquote contenedor principal */
 .blockquote {
     position: relative;
-    width: 48%;
     max-width: 350px;
     margin: 20px auto;
     align-self: center;
@@ -61,10 +60,10 @@
     position: absolute;
     border: 2.5px solid var(--blue-color);
     border-radius: 0 50px 0 0;
-    width: 60px;
+    width: 50px;
     height: 40px;
     bottom: -40px;
-    left: 30px;
+    left: 55px;
     border-bottom: none;
     border-left: none;
     z-index: 3;
@@ -73,21 +72,21 @@
 .blockquote h1:before {
     content:"";
     position: absolute;
-    width: 80px;
+    width: 90px;
     border: 6px solid var(--white-color);
-    bottom: -3px;
-    left: 50px;
+    bottom: -4px;
+    left: 60px;
     z-index: 2;
 }
  /* Blockquote subheader */
 .blockquote h4 {
     position: relative;
     color: var(--dark-blue-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0;
     z-index: 1;
     padding-top: 10px;
-    padding-left: 42%;
+    padding-left: 35%;
 }
 
 /*Animations*/
@@ -103,13 +102,27 @@
     #principal-banner .hero-image{
         margin: 0!important;
     }
+    .blockquote{
+        width: 48%;
+    }
+     /* Curvita */
+    .blockquote h1:after {
+        left: 35px;
+    }
+    /*Borrador para la curvita*/
+    .blockquote h1:before {
+        left: 40px;
+    }
+    .blockquote h4{
+        padding-left: 38%
+    }
 }
 @media (min-width:768px){/*md*/
     #principal-banner div{
         margin: 5%;
     }
     #principal-banner .hero-image {
-        background: url(../assets/images/quienes-somos-md.webp) no-repeat center;
+        background: url(../assets/images/quienes-somos/quienes-somos-md.webp) no-repeat center;
     }
     .blockquote {
         width: 45%;
@@ -124,6 +137,10 @@
         bottom: -50px;
         left: 50px;
     }
+    /*Borrador para la curvita*/
+    .blockquote h1:before {
+        left: 55px;
+    }
      /* Blockquote subheader */
     .blockquote h4 {
         font-size: 1.3rem;
@@ -134,7 +151,7 @@
 }
 @media (min-width:992px){/*lg*/
     #principal-banner .hero-image {
-        background: url(../assets/images/quienes-somos-lg.webp) no-repeat center;
+        background: url(../assets/images/quienes-somos/quienes-somos-lg.webp) no-repeat center;
         padding-bottom: 0;
         margin: 0!important;
     }
@@ -157,6 +174,9 @@
         padding-top: 15px;
         padding-left:12px;
         margin-left:120px;
+    }
+    .blockquote:nth-child(7){
+        width: 50%!important;
     }
     #figure-1{
         display: block;
