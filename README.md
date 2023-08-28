@@ -13,16 +13,16 @@ Proyecto integrador fase1
 componen, header, main y footer. ✔️
 
 3 - Generar las animaciones que se ven en la home.
-   - Crearemos un archivo .css con las animaciones. ⚪falta pasarlas ahi
+   - Crearemos un archivo .css con las animaciones. Quedaron las animaciones en el .css, y las llamadas a las animaciones en cada .css correspondiente. ✔️
 
 4 - Crear la sección de Actividad.
-   - Investigar una librería para la galería de imágenes. ❌
+   - Investigar una librería para la galería de imágenes. Slick ✔️
 
-5 - Realizar la sección Proyecto. ❌
+5 - Realizar la sección Proyecto. ✔️
 
-6 - Agregar las sección de inscripciones ❌
+6 - Agregar las sección de inscripciones ✔️
 
-7 - Crear la sección Colaborar a libre elección. ❌
+7 - Crear la sección Colaborar a libre elección. ✔️
 
 8 - Entregar el resultado final desplegado en github pages. ❌
 ------
