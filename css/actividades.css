@@ -51,6 +51,11 @@ main{
     font-size: 10px;
 }
 
+/*Animaciones*/
+#actividades #img, #actividades h2{
+    animation: fadeFromRight 1s 1 linear 0s;
+}
+
 /*Breakpoints*/
 @media (min-width: 768px){/*lg*/
     #hero-image{
