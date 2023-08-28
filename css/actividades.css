@@ -1,6 +1,56 @@
 #hero-image{
     background: url(../assets/images/actividades/actividades-banner.webp) no-repeat center;
-    height: 500px;
+    height: 200px;
     background-size: cover;
     position: relative;
+}
+main{
+    color: var(--dark-grey-color);
+}
+#actividades #img{
+    height: 400px;
+}
+#actividades p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/*Personalizando el carousel*/
+.slick-carousel div img{
+    height: 200px;
+}
+.slick-next, .slick-prev{
+    top: 45%;
+}
+.slick-prev{
+    left: -30px;
+}
+.slick-next{
+    right: -5px;
+}
+.slick-next::before, .slick-prev::before {
+    color: var(--blue-color);
+}
+.slick-prev::before{
+    content: url(../assets/images/figures/prev.png);
+}
+.slick-next::before{
+    content: url(../assets/images/figures/next.png);
+}
+.slick-dots li button:before{
+    font-size: 10px;
+}
+
+@media (min-width: 768px){/*lg*/
+    #hero-image{
+        height: 300px;
+    }
+    #img{
+        height: 400px;
+    }
+}
+@media (min-width: 1200px){/*xl*/
+    #hero-image{
+        height: 500px;
+    }
 }
