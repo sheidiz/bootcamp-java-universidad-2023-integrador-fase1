@@ -22,3 +22,8 @@
 	border: 2px solid var(--dark-blue-color);
     padding: 0.38rem 6rem;
 }
+
+/*Animations*/
+#figure-1{
+    animation: fadeFromRight 1s 1 linear 0s;
+}
