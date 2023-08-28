@@ -10,6 +10,14 @@ main{
 #actividades #img{
     height: 400px;
 }
+#actividades h2{
+    color: var(--blue-color);
+}
+#actividades h2:nth-child(2){
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+}
 #actividades p{
     font-size: 1rem;
     text-align: justify;
