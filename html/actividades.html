@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	
+
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/animaciones.css">
+    <link rel="stylesheet" href="../css/actividades.css">
+	<link rel="icon" type="image/x-icon" href="../assets/images/logoGC.png">
+    <title>Proyecto GC | Actividades</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div id="menu" class="container-fluid">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../assets/images/logoGC.png" 
+                        alt="Logo" 
+                        class="d-inline-block">
+                        <span class="title fs-2">Proyecto <span>GC</span></span>
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#miMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="miMenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav m-auto text-center d-flex">
+                        <li class="nav-item"><a href="./sobre-nosotros.html" class="nav-link me-3 me-xl-5 menu-info">Sobre nosotros</a></li>
+                        <li class="nav-item"><a href="./proyecto.html" class="nav-link me-3 me-xl-5 menu-info">Proyecto</a></li>
+                        <li class="nav-item fw-bold"><a href="./actividades.html" class="nav-link me-3 me-xl-5 menu-info">Actividades</a></li>
+                        <li class="nav-item"><a href="./colabora.html" class="nav-link me-3 me-xl-5 menu-link">Colaborar</a></li>
+                        <li class="nav-item"><a href="./inscripciones.html" class="nav-link me-3 me-xl-5 menu-link">Inscripciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+		
+	</main>
+
+	<footer class="text-white p-3">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-10 col-md-4">
+                    <h3 class="d-inline-block fs-1">Contactanos</h3>
+                    <address>Manzoni 1360
+                        Gonzáles Catán
+                        Buenos Aires Provincia
+                        <a href="tel:11 7102 6887" class="text-white text-decoration-none">Tel 11 7102 6887</a>
+                        <a href="mailto:info@proyectogc.org" class="text-white text-decoration-none">info@proyectogc.org</a>
+                    </address>
+                    <a href="https://www.facebook.com/proyectogc.ong" target="_blank" class="d-inline-block align-top">
+                        <img src="../assets/images/icons8-facebook.svg" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/proyecto.gc" target="_blank" class="d-inline-block align-top">
+                        <img src="../assets/images/icons8-instagram.svg" alt="instagram">
+                    </a>
+                    <img class="d-block mb-3"src="../assets/images/logoGC_slogan.png" alt="">
+                </div>
+                
+                <div class="col-10 col-md-4">
+                    <form class="needs-validation d-flex flex-column g-3" action="" novalidate>
+                        <div class="form-floating text-dark mb-3">
+                            <input type="text" id="contacto-nombre" class="form-control" required>
+                            <label for="contacto-nombre" class="form-label">Nombre *</label>
+                            <div class="invalid-feedback">Debe ingresar un nombre</div>
+                        </div>
+                        <div class="form-floating text-dark mb-3">
+                            <input type="email" id="contacto-email" class="form-control" required>
+                            <label for="contacto-email" class="form-label">Email *</label>
+                            <div class="invalid-feedback">Debe ingresar un email</div>
+                        </div>
+                        <div class="form-floating text-dark mb-3">
+                            <textarea col="4" id="contacto-mensaje" class="form-control" style="height: 100px;" required></textarea>
+                            <label for="contacto-mensaje" class="form-label">Mensaje *</label>
+                            <div class="invalid-feedback">Debe ingresar un mensaje</div>
+                        </div>
+                        <div class="form-check form-switch mb-3">
+                            <input name="suscripcion-email" type="checkbox" class="form-check-input" value="" id="suscripcion-email">
+                            <label for="suscripcion-email" class="form-check-label">¿Desea recibir novedades? (opcional)</label>
+                        </div>
+                        <button id="submit" type="submit" class="btn btn-lg btn-form">Enviar</button>
+                    </form>
+                    <script>
+                        (() => {
+                            'use strict'
+            
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            const forms = document.querySelectorAll('.needs-validation')
+            
+                            // Loop over them and prevent submission
+                            Array.from(forms).forEach(form => {
+                            form.addEventListener('submit', event => {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+            
+                            form.classList.add('was-validated')
+                            }, false)
+                        })
+                        })()
+                        
+                        </script>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
