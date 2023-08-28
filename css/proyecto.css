@@ -1,6 +1,6 @@
 #hero-image{
-    background: url(../assets/images/proyecto-header-lg.webp) no-repeat center;
-    height: 500px;
+    background: url(../assets/images/proyecto/proyecto-banner-sm.webp) no-repeat center;
+    height: 200px;
     background-size: cover;
     position: relative;
 }
@@ -19,17 +19,18 @@
 #proyectos .row p, #proyectos .row ul{
     font-weight: lighter;
     font-size: 1rem;
+    text-align: justify;
 }
 #proyectos .row .circle{
-    width: 5rem;
+    width: 8rem;
     font-size: 0.8rem;
-    text-align: center;
 }
 #proyectos .row .circle p{
-    font-size: 0.7rem;
+    font-size: 1rem;
+    text-align: center;
 }
 #proyectos .row .circle img{
-    width: 3rem;
+    width: 4rem;
 }
 #proyectos .row blockquote{
     margin: 0 auto;
@@ -39,8 +40,8 @@
     border-left: 3px solid var(--green-color-1);
 }
 #se-parte{
-    background: url(../assets/images/proyecto-3.webp) no-repeat center;
-    height: 500px;
+    background: url(../assets/images/proyecto/proyecto-3-sm.webp) no-repeat center;
+    height: 200px;
     background-size: cover;
     position: relative;
 }
@@ -48,18 +49,18 @@
     color: var(--white-color);
     padding: 0.5rem;
     background-color: var(--blue-color);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: absolute;
     left: 50%;
     bottom: 50%;
 }
-#se-parte button{
+#se-parte a{
     background-color: var(--white-color);
     color: var(--dark-blue-color);
     position: absolute;
     left: 50%;
-    bottom: 42%;
-    font-size: 1.2rem;
+    bottom: 35%;
+    font-size: 1rem;
     padding: 0.2rem 3rem;
     border-radius: 54px;
 	border: none;
@@ -71,18 +72,51 @@
 }
 
 /*Breakpoints*/
-@media (min-width: 768px)/*lg*/{
+@media (min-width: 576px){/*sm*/
     #proyectos .row .circle{
         width: 6rem;
     }
     #proyectos .row .circle p{   
-        font-size: 0.8rem!important;
+        font-size: 0.8rem;
     }
     #proyectos .row .circle img{
-        width: 4rem;
+        width: 3.5rem;
     }
 }
-@media (min-width:1200px)/*md*/{
+@media (min-width: 768px)/*md*/{
+    #hero-image{
+        background: url(../assets/images/proyecto/proyecto-banner-md.webp) no-repeat center;
+        height: 300px;
+    }
+    #proyectos .row .circle{
+        width: 6rem;
+    }
+    #proyectos .row .circle p{   
+        font-size: 0.8rem!;
+    }
+    #proyectos .row .circle img{
+        width: 3.5rem;
+    }
+    #se-parte{
+        background: url(../assets/images/proyecto/proyecto-3-md.webp) no-repeat center;
+        height: 300px;
+    }
+    #se-parte h4{
+        font-size: 1.5rem;
+        left: 60%;
+    }
+    #se-parte a{
+        left: 60%;
+        bottom: 35%;
+        padding: 0.5rem 4rem;
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:992px)/*lg*/{
+    #hero-image{
+        background: url(../assets/images/proyecto/proyecto-banner-lg.webp) no-repeat center;
+        height: 500px;
+    }
     #proyectos .row h2{
         font-size: 3rem;
     }
@@ -92,22 +126,26 @@
     #proyectos .row .circle{
         width: 8rem;
     }
-    /* #proyectos .row .circle p{   
-        font-size: 0.7rem;
-    } */
+    #proyectos .row .circle p{   
+        font-size: 1rem;
+    }
     #proyectos .row .circle img{
-        width: 6rem;
+        width: 4rem;
     }
     #proyectos .row blockquote{
         width: 80%;
     }
+    #se-parte{
+        background: url(../assets/images/proyecto/proyecto-3-lg.webp) no-repeat center;
+        height: 500px;
+    }
     #se-parte h4{
         font-size: 2rem;
-        left: 70%;
+        left: 60%;
     }
-    #se-parte button{
-        left: 70%;
-        bottom: 40%;
+    #se-parte a{
+        left: 60%;
+        bottom: 38%;
         padding: 0.5rem 4rem;
         font-size: 1.5rem;
     }
