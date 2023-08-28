@@ -1,0 +1,6 @@
+#hero-image{
+    background: url(../assets/images/actividades/actividades-banner.webp) no-repeat center;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
