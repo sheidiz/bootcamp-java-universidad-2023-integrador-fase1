@@ -3,8 +3,8 @@
     color: var(--white-color);
     padding: 0.5rem;
 }
-.requisitos p, .requisitos ul{
-
+.container div:nth-child(1) p{
+    color: var(--blue-color);
 }
 .requisitos img{
     margin-top: 10%
