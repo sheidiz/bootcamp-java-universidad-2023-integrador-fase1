@@ -50,7 +50,12 @@
     background-color: var(--white-color);
 }
 
-/*BREAKPOINTS*/
+/*Animaciones*/
+#header-image div:nth-child(1), #colaborar{
+    animation: fadeFromRight 1s 1 linear 0s;
+}
+
+/*Breakpoints*/
 @media (min-width:578px){/*sm*/
     #header-image{
         height: 70vh;
