@@ -1,6 +1,7 @@
 #header-image{
     background-color: var(--green-color-1);
     height: 55vh;
+    margin-bottom: 20%;
     vertical-align: center;
 }
 #header-image h1{
@@ -11,7 +12,7 @@
 }
 .hero-image {
     position: relative;
-    background: url(/assets/images/colaborar-header.webp) no-repeat top;
+    background: url(/assets/images/colaborar/colaborar-banner-sm.webp) no-repeat top;
     background-size: cover;
     padding-bottom: 50%;
     margin-top: 5%;
@@ -60,22 +61,30 @@
 /*Breakpoints*/
 @media (min-width:578px){/*sm*/
     #header-image{
-        height: 70vh;
+        height: 60vh;
+    }
+    #header-image h1,#header-image p{
+        text-align: center;
     }
     .hero-image{
         padding-bottom: 50%;
+        margin: 0;
     }
     #colaborar{
         padding-top: 10%;
     }
 }
 @media (min-width:768px){/*md*/
+    #header-image{
+        height: 45vh;
+    }
     .hero-image {
-        background: url(/assets/images/colaborar-header.webp) no-repeat top;
+        background: url(/assets/images/colaborar/colaborar-banner-md.webp) no-repeat top;
         padding-bottom: 50%;
     }
     #header-image h1,#header-image p{
         margin: 0 10%;
+        text-align: start;
     }
     .img-thumbnail:hover{
         transition: all .5s linear;
@@ -85,10 +94,11 @@
 }
 @media (min-width:992px){/*lg*/
     #header-image{
-        height: 45vh;
+        height: 50vh;
+        margin-bottom: 0;
     }
     .hero-image {
-        background: url(/assets/images/colaborar-header.webp) no-repeat top;
+        background: url(/assets/images/colaborar/colaborar-banner-lg.webp) no-repeat top;
         padding: 0;
         margin: 0;
     }
