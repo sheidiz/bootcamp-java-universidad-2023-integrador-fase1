@@ -20,16 +20,22 @@
     color: var(--blue-color);
     margin-bottom: 0;
 }
-.img-thumbnail{
-    box-shadow: 10px 10px 10px 0px var(--grey-color);
+#colaborar h2{
+    color: var(--blue-color);
+    text-align: center;
+    padding: 0.5rem;
 }
+
 .img-thumbnail h3, .img-thumbnail p, .img-thumbnail a{
     width: 100%;
     color: var(--dark-grey-color);
 }
+.img-thumbnail p{
+    text-align: justify;
+}
 .img-thumbnail img{
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     text-align: center;
 }
 .img-thumbnail h3{
@@ -43,11 +49,7 @@
 .img-thumbnail .btn{
     background-color: var(--green-color-1);
     color: var(--white-color);
-}
-.img-thumbnail .btn:hover{
-    border: 2px solid var(--green-color-1);
-    color: var(--green-color-1);
-    background-color: var(--white-color);
+    padding: 0.5rem;
 }
 
 /*Animaciones*/
@@ -74,6 +76,11 @@
     }
     #header-image h1,#header-image p{
         margin: 0 10%;
+    }
+    .img-thumbnail:hover{
+        transition: all .5s linear;
+        border-left: 5px solid var(--green-color-2);
+        transform: scale(1.1);
     }
 }
 @media (min-width:992px){/*lg*/
