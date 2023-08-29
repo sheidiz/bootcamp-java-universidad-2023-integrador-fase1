@@ -57,22 +57,21 @@ main{
 }
 
 /*Breakpoints*/
-@media (min-width: 768px){/*lg*/
+@media (min-width: 768px){/*md*/
     #hero-image{
         height: 300px;
         background: url(../assets/images/actividades/actividades-banner-md.webp) no-repeat center;
-    }
-    #actividades #img{
-        height: 300px;
-        margin-top: 10%;
     }
     #actividades p{
         font-size: 0.9rem;
     }
 }
-@media (min-width: 1200px){/*xl*/
+@media (min-width: 992px){/*lg*/
     #hero-image{
         height: 500px;
         background: url(../assets/images/actividades/actividades-banner-lg.webp) no-repeat center;
+    }
+    #actividades p{
+        font-size: 1.1rem;
     }
 }
