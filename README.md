@@ -29,5 +29,4 @@ Página web sobre el Proyecto Gonzales Catán, tomando como referencia su sitio.
 
 ## Reconocimientos
 
-Inspiration, code snippets, etc.
 * Iconos: [icon-8](https://iconos8.es/)
