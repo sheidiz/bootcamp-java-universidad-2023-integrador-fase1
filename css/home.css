@@ -27,7 +27,7 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
 }
 #principal-banner .hero-image {
     position: relative;
-    background: url(/assets/images/home-sm.jpg) no-repeat top;
+    background: url(../assets/images/home-sm.jpg) no-repeat top;
     background-size: cover;
     padding-bottom: 50%;
     margin: 5% 0 0 0!important;
@@ -64,7 +64,7 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
         margin: 0 5%;
     }
     #principal-banner .hero-image {
-        background: url(/assets/images/home-md.jpg) no-repeat center;
+        background: url(../assets/images/home-md.jpg) no-repeat center;
         /* padding-top: 5%; */
         /* padding-bottom: 50%; */
     }
@@ -84,7 +84,7 @@ Facebook and Instagram icons from Icon8 https://icons8.com/
 }
 @media (min-width:992px){/*lg*/
     #principal-banner .hero-image {
-        background: url(/assets/images/home-lg.jpg) no-repeat center;
+        background: url(../assets/images/home-lg.jpg) no-repeat center;
         padding-bottom: 0;
         margin: 0!important;
     }
