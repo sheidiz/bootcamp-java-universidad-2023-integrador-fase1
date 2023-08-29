@@ -1,32 +1,33 @@
-# bootcamp-java-universidad-2023-integrador-fase1
-Proyecto integrador fase1
-------
-### Pasos
-------
-(1) - Crear repositorio git:
+# Proyecto Integrador Fase 1
 
-   - Crearemos la cuenta en github. ✔️
-   - Crearemos el repositorio ✔️
+Parte del Bootcamp Java Developer de EducacionIt (2023)
 
-2 - Configurar github pages, para poder visualizar el index.html de proyecto.
-   - Crearemos la home y linkeando con las diferentes secciones que la
-componen, header, main y footer. ✔️
+## Descripción
 
-3 - Generar las animaciones que se ven en la home.
-   - Crearemos un archivo .css con las animaciones. Quedaron las animaciones en el .css, y las llamadas a las animaciones en cada .css correspondiente. ✔️
+Página web sobre el Proyecto Gonzales Catán, tomando como referencia su sitio.
 
-4 - Crear la sección de Actividad.
-   - Investigar una librería para la galería de imágenes. Slick ✔️
+## A tener en cuenta
 
-5 - Realizar la sección Proyecto. ✔️
+### Consignas
 
-6 - Agregar las sección de inscripciones ✔️
+* Crear repositorio git
+* Configurar github pages, para poder visualizar el index.html de proyecto.
+    * Crearemos la home y linkeando con las diferentes secciones que la componen, header, main y footer. 
+* Generar las animaciones que se ven en la home.
+    * Crearemos un archivo .css con las animaciones.
+* Crear la sección de Actividad.
+    * Crearemos un archivo .css con las animaciones.
+* Realizar la sección Proyecto.
+* Agregar las sección de inscripciones.
+* Crear la sección Colaborar a libre elección.
+* Entregar el resultado final desplegado en github pages.
 
-7 - Crear la sección Colaborar a libre elección. ✔️
+### Detalles
 
-8 - Entregar el resultado final desplegado en github pages. ❌
-------
-### A tener en consideración:
-------
-- Obligatorio usar Bootstrap
-- Las imagenes tienen que cambiarse por resolucion ⚪ falta revisar https://www.aconvert.com/es/image/resize/
+* Las animaciones se crearon en animaciones.css. Y las llamadas a dichas animaciones se encuentran en el .css de cada página.
+* Para la librería de imagenes se utilizo Slick.
+
+## Reconocimientos
+
+Inspiration, code snippets, etc.
+* [icon-8](https://iconos8.es/)
