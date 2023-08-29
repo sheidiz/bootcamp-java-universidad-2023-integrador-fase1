@@ -12,7 +12,7 @@
 }
 .hero-image {
     position: relative;
-    background: url(/assets/images/colaborar/colaborar-banner-sm.webp) no-repeat top;
+    background: url(../assets/images/colaborar/colaborar-banner-sm.webp) no-repeat top;
     background-size: cover;
     padding-bottom: 50%;
     margin-top: 5%;
@@ -77,7 +77,7 @@
         height: 45vh;
     }
     .hero-image {
-        background: url(/assets/images/colaborar/colaborar-banner-md.webp) no-repeat top;
+        background: url(../assets/images/colaborar/colaborar-banner-md.webp) no-repeat top;
         padding-bottom: 50%;
     }
     #header-image h1,#header-image p{
@@ -96,7 +96,7 @@
         margin-bottom: 0;
     }
     .hero-image {
-        background: url(/assets/images/colaborar/colaborar-banner-lg.webp) no-repeat top;
+        background: url(../assets/images/colaborar/colaborar-banner-lg.webp) no-repeat top;
         padding: 0;
         margin: 0;
     }
