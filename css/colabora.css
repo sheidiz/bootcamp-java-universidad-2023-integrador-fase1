@@ -17,7 +17,7 @@
     padding-bottom: 50%;
     margin-top: 5%;
 }
-#colaborar h3{
+#colaborar h3, #apoyos h3{
     color: var(--blue-color);
     margin-bottom: 0;
 }
@@ -26,7 +26,6 @@
     text-align: center;
     padding: 0.5rem;
 }
-
 .img-thumbnail h3, .img-thumbnail p, .img-thumbnail a{
     width: 100%;
     color: var(--dark-grey-color);
@@ -39,12 +38,7 @@
     height: 35vh;
     text-align: center;
 }
-.img-thumbnail h3{
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    padding: 0.5rem;
-}
-.img-thumbnail h3 a{
+.img-thumbnail p a{
     color: var(--light-blue-color);
 }
 .img-thumbnail .btn{
@@ -52,9 +46,13 @@
     color: var(--white-color);
     padding: 0.5rem;
 }
+#apoyos img{
+    width: 10rem;
+    height: auto;
+}
 
 /*Animaciones*/
-#header-image div:nth-child(1), #colaborar{
+#header-image div:nth-child(1), #colaborar .row:nth-child(1),#colaborar .row:nth-child(2),#colaborar .row:nth-child(3) img{
     animation: fadeFromRight 1s 1 linear 0s;
 }
 
